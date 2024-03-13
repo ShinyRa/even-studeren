@@ -67,4 +67,7 @@ describe('ActionsLocalStorage', () => {
     const value = ActionsLocalStorage.get('nonExistingKey');
     expect(value).toBeNull();
   });
+
+
+  // TODO: Add more edge cases! These tests do not cover everything
 });
