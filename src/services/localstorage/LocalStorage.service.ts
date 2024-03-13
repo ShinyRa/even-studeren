@@ -1,5 +1,5 @@
-abstract class LocalStorageService { 
-    static database: Storage = localStorage
+class LocalStorageService { 
+    //static database: Storage = localStorage
 
     // TODO: populate localstorage with existing data function
 }
