@@ -6,6 +6,9 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    // Enables compatibility ECMA modules (ES modules) when importing CommonJS modules.
+    "esModuleInterop": true,
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
