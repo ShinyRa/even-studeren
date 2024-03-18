@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { QuizCardType } from '../../../components/quizcard/QuizCardType' 
 import QuizCard from '../../../components/quizcard/QuizCard'
+import Header from '../../../components/navigation/Header'
+import HeaderContextProvider from '../../../components/navigation/HeaderContextProvider'
 
 function QuizCardPage() {
     const [quizCard] = useState<QuizCardType>({
@@ -14,7 +16,10 @@ function QuizCardPage() {
     })
 
     return (
-        <QuizCard card={quizCard} />
+        <HeaderContextProvider>
+            <Header />
+            <QuizCard card={quizCard} />
+        </HeaderContextProvider>
     )
 }
 

@@ -1,13 +1,19 @@
 import { QuizCardType } from "./QuizCardType";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CSSTransition } from 'react-transition-group' 
 
 import './quizcard.scss'
 import './flip-transition.scss'
+import { HeaderContext } from "../navigation/HeaderContextProvider";
 
 const QuizCard = ({card}: QuizCardType) => {
 
     const [showFront, setShowFront] = useState(true)
+    const headerContext = useContext(HeaderContext)
+
+    useEffect(() => {
+        headerContext.setData({title: card.questionTitle, subtitle: card.questionDescription})
+    }, [card])
 
     return (
         <CSSTransition
@@ -51,12 +57,12 @@ const QuizCard = ({card}: QuizCardType) => {
                         <p className="card-footer-item">
                             {card.tags.map(({ identifier }) => (
                                 <span className="tag is-info" key={identifier}>{identifier}</span>
-                                ))}
+                            ))}
                         </p>
                         <p className="card-footer-item">
                             {card.categories.map(({ identifier }) => (
                                 <span className="tag is-danger" key={identifier}>{identifier}</span>
-                                ))}
+                            ))}
                         </p>
                     </footer>
                 </div>

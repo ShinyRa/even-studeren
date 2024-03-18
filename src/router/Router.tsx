@@ -4,7 +4,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from '../App';
-import NotFound from "../NotFound";
+import NotFound from "./routes/NotFound";
 import QuizCardPage from "./routes/quizcard/QuizCardPage";
 
 function Router() {
@@ -25,6 +25,7 @@ function Router() {
     element: <NotFound />,
   },
 ]);
+
 
   return (
     <RouterProvider router={router} />
