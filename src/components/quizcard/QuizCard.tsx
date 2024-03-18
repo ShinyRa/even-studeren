@@ -12,7 +12,7 @@ const QuizCard = ({card}: QuizCardType) => {
     return (
         <CSSTransition
             in={showFront}
-            timeout={300}
+            timeout={500}
             classNames={'flip'}
         >
             <div className="flippable" onClick={() => setShowFront(!showFront)}>

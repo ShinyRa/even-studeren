@@ -4,7 +4,6 @@
 
 .flip-exit-active {
     transform: rotateY(180deg);
-    transition: transform;
 }
 
 .flip-exit-done {
@@ -17,7 +16,6 @@
 
 .flip-enter-active {
     transform: rotateY(0deg);
-    transition: transform;
 }
 
 .flip-enter-done {
