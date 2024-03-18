@@ -27,12 +27,12 @@ const QuizCard = ({card}: QuizCardType) => {
                     </div>
                     <footer className="card-footer">
                         <p className="card-footer-item">
-                            {card.tags.map(({identifier}) => (
+                            {card.tags.map(({ identifier }) => (
                                 <span className="tag is-info" key={identifier}>{identifier}</span>
                             ))}
                         </p>
                         <p className="card-footer-item">
-                            {card.categories.map(({identifier}) => (
+                            {card.categories.map(({ identifier }) => (
                                 <span className="tag is-danger" key={identifier}>{identifier}</span>
                             ))}
                         </p>
@@ -49,12 +49,12 @@ const QuizCard = ({card}: QuizCardType) => {
                     </div>
                     <footer className="card-footer">
                         <p className="card-footer-item">
-                            {card.tags.map(({identifier}) => (
+                            {card.tags.map(({ identifier }) => (
                                 <span className="tag is-info" key={identifier}>{identifier}</span>
                                 ))}
                         </p>
                         <p className="card-footer-item">
-                            {card.categories.map(({identifier}) => (
+                            {card.categories.map(({ identifier }) => (
                                 <span className="tag is-danger" key={identifier}>{identifier}</span>
                                 ))}
                         </p>
