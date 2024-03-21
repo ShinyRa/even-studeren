@@ -26,7 +26,6 @@ class ActionsLocalStorage extends LocalStorageService {
         const item = localStorage.getItem(key)
         return item ? item : null
     }
-
 }
 
 export default ActionsLocalStorage

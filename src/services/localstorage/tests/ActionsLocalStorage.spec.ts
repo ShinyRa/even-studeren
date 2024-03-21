@@ -43,6 +43,7 @@ describe('ActionsLocalStorage', () => {
   it('should add key-value pair to localStorage', () => {
     ActionsLocalStorage.add('testKey', 'testValue');
     expect(localStorage.getItem('testKey')).toEqual('testValue');
+    
   });
 
   it('should update existing key-value pair in localStorage', () => {
