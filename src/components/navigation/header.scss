@@ -1,0 +1,28 @@
+.navbar {
+    background-color: transparent;
+    padding: 2rem;
+    position: relative;
+    .navbar-menu {
+        justify-content: center;
+    }
+    .navbar-back {
+        position: absolute;
+    }
+    button {
+        background-color: #F0F0F0;
+        font-weight: bold;
+        font-size: 2rem;
+        border: none;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-weight: bold;
+        }
+        h3 {
+            color: #7A7A7A;
+            font-size: 1.5rem;
+        }
+    }
+}
